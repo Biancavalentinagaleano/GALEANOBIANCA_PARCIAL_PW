@@ -70,6 +70,18 @@ nav a:hover {
     transform: scale(1.2);
 }
 
+/* Velocidad de animación variable (FALTABA) */
+.velocidad {
+    font-size: 22px;
+    animation: mover 2s linear infinite;
+}
+
+@keyframes mover {
+    0% { letter-spacing: 0px; }
+    50% { letter-spacing: 5px; }
+    100% { letter-spacing: 0px; }
+}
+
 /* GALERÍA */
 .galeria {
     display: grid;
@@ -96,31 +108,3 @@ nav a:hover {
 }
 
 .desc {
-    position: absolute;
-    bottom: 0;
-    background: rgba(0,0,0,0.7);
-    width: 100%;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    opacity: 0;
-    transition: 0.5s;
-}
-
-.img-box:hover .desc {
-    opacity: 1;
-}
-
-/* Animación del BLOG */
-.article {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: 1s;
-}
-
-.article.show {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-
