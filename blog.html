@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog Profesional</title>
+    <link rel="stylesheet" href="style.css">
+
+<script>
+document.addEventListener("scroll", function() {
+    document.querySelectorAll(".article").forEach(a => {
+        if (a.getBoundingClientRect().top < window.innerHeight - 100) {
+            a.classList.add("show");
+        }
+    });
+});
+</script>
+
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="perfil.html">Perfil</a>
+    <a href="galeria.html">Galería</a>
+    <a href="blog.html">Blog</a>
+    <a href="#">Extra</a>
+</nav>
+
+<h1 style="text-align:center;">Blog Profesional</h1>
+
+<div style="width:80%; margin:auto;">
+
+    <div class="article">
+        <h2>Paso por River Plate (UY)</h2>
+        <img src="img/olveira1.jpg" width="100%">
+        <p>Olveira debutó profesionalmente en River Plate de Uruguay...</p>
+        <a href="https://es.wikipedia.org/wiki/River_Plate_(Uruguay)">Leer más</a>
+    </div>
+
+    <div class="article">
+        <h2>Llegada al Club Olimpia</h2>
+        <img src="img/olveira4.jpg" width="100%">
+        <p>Se convirtió en uno de los arqueros más destacados del país...</p>
+        <a href="https://es.wikipedia.org/wiki/Club_Olimpia">Leer más</a>
+    </div>
+
+    <div class="article">
+        <h2>Participaciones Internacionales</h2>
+        <img src="img/olveira6.jpg" width="100%">
+        <p>Olveira ha disputado competencias internacionales...</p>
+        <a href="https://www.conmebol.com/">Leer más</a>
+    </div>
+
+</div>
+
+</body>
+</html>
