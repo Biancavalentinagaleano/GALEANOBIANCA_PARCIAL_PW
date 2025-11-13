@@ -41,7 +41,7 @@ nav a:hover {
     background: #2a7a2a;
 }
 
-/* Texto giratorio */
+/* Texto rotativo */
 .rotar {
     animation: girar 5s linear infinite;
 }
@@ -111,7 +111,7 @@ nav a:hover {
     opacity: 1;
 }
 
-/* BLOG – animación scroll */
+/* Animación del BLOG */
 .article {
     opacity: 0;
     transform: translateY(40px);
@@ -122,4 +122,5 @@ nav a:hover {
     opacity: 1;
     transform: translateY(0);
 }
+
 
